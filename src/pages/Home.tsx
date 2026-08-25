@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import profileImg from '../assets/deadfile.png'
+import profileImg from '../assets/headshot.jpg'
 import { fetchAnalytics } from '../lib/api'
 import type { SiteAnalytics } from '../types'
 // Bio text lives in /aboutme.txt at the project root — edit that file and
@@ -11,9 +11,9 @@ const BIO_PARAGRAPHS = bioText.trim().split(/\n\s*\n/)
 
 const CONTACTS = [
   { label: 'Gmail', href: 'mailto:edlai@umich.edu' },
-  { label: 'LinkedIn', href: '#' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/edwurdl/' },
   { label: 'GitHub', href: 'https://github.com/edwurdL' },
-  { label: 'Instagram', href: '#' },
+  { label: 'Instagram', href: 'https://www.instagram.com/eeddielaii/' },
 ]
 
 const SECTIONS = [
@@ -48,7 +48,7 @@ export default function Home() {
         <img
           src={profileImg}
           alt="Profile"
-          className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover flex-shrink-0"
+          className="w-50 h-50 sm:w-40 sm:h-40 rounded-2xl object-cover flex-shrink-0"
         />
         <div>
           <h1 className="font-serif text-4xl sm:text-5xl leading-tight text-zinc-900 dark:text-zinc-100">
